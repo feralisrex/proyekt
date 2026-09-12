@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+</head>
+
+<body>
+
+    <input type="text" id="input">
+
+    <br><br>
+
+    <a href="#" id="link"></a>
+
+    <br><br>
+
+    <button id="add">Add</button>
+
+    <ul id="list"></ul>
+
+    <br>
+
+    <button id="change">Change</button>
+
+    <p id="text">Hello</p>
+
+
+    <script>
+        let input = document.getElementById("input");
+        let link = document.getElementById("link");
+        let add = document.getElementById("add");
+        let list = document.getElementById("list");
+        let change = document.getElementById("change");
+        let text = document.getElementById("text");
+
+
+        input.oninput = function () {
+            link.innerHTML = input.value;
+        };
+
+
+        add.onclick = function () {
+            let li = document.createElement("li");
+            li.innerHTML = "Hello";
+            list.append(li);
+        };
+
+
+        change.onclick = function () {
+            text.innerHTML += "Hello";
+        };
+    </script>
+
+</body>
+
+</html>

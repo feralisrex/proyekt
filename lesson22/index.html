@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Novell Services Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 20px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .panel {
+            width: 460px;
+            padding: 25px 30px;
+            border: 4px solid #2c5c2c;
+            background: #c8e6c8;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-panel {
+            background: #b0d4ff;
+            border-color: #2e4a7a;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin: 16px 0 7px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 9px;
+            border: 2px solid #333;
+            font-size: 16px;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            margin-left: 8px;
+            font-weight: normal;
+            display: inline;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 26px;
+            font-size: 17px;
+            margin-right: 15px;
+        }
+
+        .buy-btn {
+            margin-top: 30px;
+            width: 100%;
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 14px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <fieldset class="panel">
+            <legend>Novell Services Login</legend>
+
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="username" required>
+
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="********" required>
+
+            <label>Web server:</label>
+            <select name="webserver">
+                <option>-- Choose a server --</option>
+            </select>
+
+            <label>Please specify your role:</label>
+            <div class="radio-group">
+                <input type="radio" name="role" id="admin"><label for="admin"> Admin</label><br>
+                <input type="radio" name="role" id="engineer"><label for="engineer"> Engineer</label><br>
+                <input type="radio" name="role" id="manager"><label for="manager"> Manager</label><br>
+                <input type="radio" name="role" id="guest"><label for="guest"> Guest</label>
+            </div>
+
+            <label>Single Sign-on to the following:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="mail" name="mail"><label for="mail"> Mail</label><br>
+                <input type="checkbox" id="payroll" name="payroll"><label for="payroll"> Payroll</label><br>
+                <input type="checkbox" id="selfservice" name="selfservice"><label for="selfservice">
+                    Self-service</label>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Login">
+                <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset class="panel card-panel">
+            <legend>Card details</legend>
+
+            <label>Card type</label>
+            <div class="radio-group">
+                <input type="radio" name="cardtype" id="visa" checked><label for="visa"> VISA</label><br>
+                <input type="radio" name="cardtype" id="amex"><label for="amex"> AmEx</label><br>
+                <input type="radio" name="cardtype" id="mastercard"><label for="mastercard"> Mastercard</label>
+            </div>
+
+            <label>Card number</label>
+            <input type="text" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+
+            <label>Security code</label>
+            <input type="text" name="securitycode" placeholder="000-000-000" style="width: 170px;" required>
+
+            <label>Name on card</label>
+            <input type="text" name="nameoncard" placeholder="Exact name as on the card" required>
+
+            <input type="submit" class="buy-btn" value="BUY IT!">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+.first {
+    background-color: red;
+    border: 2px solid black;
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    margin: 50px;
+    float: left;
+}
+
+.second {
+    background-color: blue;
+    border: 2px solid black;
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    margin: 50px;
+    float: right;
+}
+
+.third {
+    background-color: green;
+    border: 2px solid black;
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    margin: 50px;
+    float: left;
+}
+
+.fourth {
+    background-color: yellow;
+    border: 2px solid black;
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    margin: 50px;
+    float: right;
+}

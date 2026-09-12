@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New</title>
+
+    <style>
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+
+        body {
+            background: #dcdcdc;
+            font-family: Arial;                   
+        }
+
+         .olcu{
+            width: 100px;
+            height: 50px;
+        }
+
+
+        .box {
+            border: 2px solid gray;
+            padding: 10px;
+            background: white;
+            width: 400px;
+        }
+
+        .title {
+            background: #eee;
+            padding: 2px 6px;
+
+        }
+
+        span.a {
+            display: block;
+            padding: 5px;
+            border: 3px solid black;
+            background-color: red;
+        }
+
+        span.b {
+            display: inline;
+            padding: 5px;
+            border: 3px solid black;
+            background-color: red;
+        }
+
+        span.c {
+            display: inline-block;
+            padding: 5px;
+            border: 3px solid black;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box">
+            <span class="title">display: block</span><br><br>
+            <span class="a olcu">display:<br>block</span>
+            <span class="a olcu">display:<br>block</span>
+            <span class="a olcu">display:<br>block</span>
+        </div>
+
+
+        <div class="box">
+            <span class="title">display: inline</span><br><br>
+            <span class="b olcu">display: inline</span>
+            <span class="b olcu">display: inline</span>
+            <span class="b olcu">display: inline</span>
+        </div>
+
+        <div class="box">
+            <span class="title">display: inline-block</span><br><br>
+            <span class="c olcu">display:<br>inline-block</span>
+            <span class="c olcu">display:<br>inline-block</span>
+            <span class="c olcu">display:<br>inline-block</span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

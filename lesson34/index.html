@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transform Task</title>
+
+    <style>
+        .body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background: #eee;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            padding: 5px;
+            border: 5px solid blue;
+            transition: all 0.75s ease;
+        }
+
+        .box1 {
+            background-color: red;
+        }
+
+        .box2 {
+            background-color: yellow;
+            color: black;
+        }
+
+        .box3 {
+            background-color: green;
+        }
+
+        .box4 {
+            background-color: blue;
+            border: 5px solid black;
+        }
+
+        .box1:hover {
+            border-radius: 50%;
+            background-color: green;
+        }
+
+        .box2:hover {
+            transform: rotate(90deg);
+            border-radius: 15px;
+            background-color: green;
+            color: yellow;
+        }
+
+        .box3:hover {
+            transform: scale(2);
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box4:hover {
+            transform: translateY(-100px);
+            border: 5px solid red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="body">
+        <div class="box box1">Kvadrat 1</div>
+        <div class="box box2">Kvadrat 2</div>
+        <div class="box box3">Kvadrat 3</div>
+        <div class="box box4">Kvadrat 4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+#div1{
+    text-align: center;
+    outline: thin solid red;
+    border: 5px solid black;
+}
+#div2{
+    text-align: center;
+    outline: medium dashed blue;
+    border: 5px solid black;
+}
+#div3{
+    text-align: center;
+    outline: 7px dotted green;
+    border: 5px solid black;
+}
+#div4{
+    text-align: center;
+    outline: 9px double purple;
+    border: 5px solid black;
+}
+#div5{
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    text-align: center;
+    outline: 4px solid purple;
+    outline-offset: 50px;
+    border: 5px solid black;
+}

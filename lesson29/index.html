@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            font-family: Arial;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 600px;
+        }
+
+        .card {
+            width: 80px;
+            height: 80px;
+            background: #222;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .card i {
+            font-size: 30px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover i {
+            transform: scale(1.2);
+        }
+
+        .youtube:hover {
+            background: #ff0000;
+        }
+
+        .facebook:hover {
+            background: #1877f2;
+        }
+
+        .instagram:hover {
+            background: #e4405f;
+        }
+
+        .pinterest:hover {
+            background: #bd081c;
+        }
+
+        .telegram:hover {
+            background: #0088cc;
+        }
+
+        .twitter:hover {
+            background: #000;
+        }
+
+        .tiktok:hover {
+            background: #000;
+        }
+
+        .linkedin:hover {
+            background: #0a66c2;
+        }
+
+        .github:hover {
+            background: #333;
+        }
+
+        .discord:hover {
+            background: #5865f2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="card youtube"><i class="fa-brands fa-youtube"></i></div>
+            <div class="card facebook"><i class="fa-brands fa-facebook"></i></div>
+            <div class="card instagram"><i class="fa-brands fa-square-instagram"></i></div>
+            <div class="card pinterest"><i class="fa-brands fa-pinterest"></i></div>
+            <div class="card telegram"><i class="fa-brands fa-telegram"></i></div>
+            <div class="card twitter"><i class="fa-brands fa-twitter"></i></div>
+            <div class="card tiktok"><i class="fa-brands fa-tiktok"></i></div>
+            <div class="card linkedin"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="card github"><i class="fa-brands fa-github"></i></div>
+            <div class="card discord"><i class="fa-brands fa-discord"></i></div>
+        </div>
+    </div>
+</body>
+
+</html>

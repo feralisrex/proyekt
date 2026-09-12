@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Tapşırıqları</title>
+</head>
+
+<body>
+
+    <div class="task">
+        <h1>Task1</h1>
+        <ul>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+        </ul>
+        <button onclick="changeColor()">Listdeki elementleri Arxa rengini sari et</button>
+    </div>
+
+    <div class="task">
+        <h1>Task2</h1>
+        <button onclick="add()">Add</button>
+
+        <div class="parent">
+            <p>234</p>
+            <p>454</p>
+        </div>
+    </div>
+
+    <script>
+        function changeColor() {
+            let listItems = document.querySelectorAll("ul li");
+            listItems.forEach(function (li) {
+                li.style.backgroundColor = "yellow";
+            });
+        }
+
+        let parent = document.querySelector(".parent");
+
+        function add() {
+            let newElement = document.createElement("p");
+            newElement.innerHTML = Math.floor(Math.random() * 901) + 100;
+            parent.appendChild(newElement);
+        }
+    </script>
+
+</body>
+
+</html>

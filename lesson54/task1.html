@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reng deyisdirme</title>
+</head>
+
+<body>
+
+    <p id="text">Men bir paragrafam</p>
+
+    <button id="red">Qirmizi</button>
+    <button id="blue">Mavi</button>
+    <button id="green">Yasil</button>
+
+    <script>
+        const text = document.getElementById("text");
+        const red = document.getElementById("red");
+        const green = document.getElementById("green");
+        const blue = document.getElementById("blue");
+
+        red.addEventListener("click", () => {
+            text.style.color = "red";
+        });
+
+        green.addEventListener("click", () => {
+            text.style.color = "green";
+        });
+
+        blue.addEventListener("click", () => {
+            text.style.color = "blue";
+        });
+    </script>
+
+</body>
+
+</html>

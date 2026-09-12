@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 20px 10px;
+            background: #4caf50;
+            color: white;
+            border: 0;
+            border-radius: 5px;
+        }
+
+        #box {
+            width: 250px;
+            min-height: 400px;
+            margin: auto;
+            padding: 25px;
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        p {
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="hello">Hello</button>
+    <button id="goodbye">Goodbye</button>
+
+    <div id="box"></div>
+
+    <script>
+        let box = document.getElementById("box");
+        let hello = document.getElementById("hello");
+        let goodbye = document.getElementById("goodbye");
+
+        hello.onclick = function () {
+            box.innerHTML += "<p>Hello</p>";
+        };
+
+        goodbye.onclick = function () {
+            box.innerHTML += "<p>Goodbye</p>";
+        };
+    </script>
+
+</body>
+
+</html>

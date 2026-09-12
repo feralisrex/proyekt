@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 15px;
+            border-collapse: collapse;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #0080ff;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        thead th {
+            padding: 12px;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #941d1d;
+        }
+
+        tbody tr:hover {
+            background-color: #3d7090;
+        }
+
+        .stok-yox td {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Məhsul kodu</th>
+                <th>Məhsul adi</th>
+                <th>Kateqoriya</th>
+                <th>Qiymət (₼)</th>
+                <th>Stok vəziyyəti</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>M001</td>
+                <td>Noutbuk</td>
+                <td>Elektronika</td>
+                <td>1500</td>
+                <td>Var</td>
+            </tr>
+            <tr>
+                <td>M002</td>
+                <td>Siçan</td>
+                <td>Aksesuar</td>
+                <td>25</td>
+                <td>Var</td>
+            </tr>
+            <tr class="stok-yox">
+                <td>M003</td>
+                <td>Printer</td>
+                <td>Ofis</td>
+                <td>450</td>
+                <td>Yox</td>
+            </tr>
+            <tr>
+                <td>M004</td>
+                <td>Monitor</td>
+                <td>Elektronika</td>
+                <td>600</td>
+                <td>Var</td>
+            </tr>
+            <tr class="stok-yox">
+                <td>M005</td>
+                <td>Klaviatura</td>
+                <td>Aksesuar</td>
+                <td>80</td>
+                <td>Bitti</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

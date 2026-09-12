@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: black;
+            padding: 0 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: green;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: black;
+            min-width: 150px;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            padding: 12px;
+        }
+
+        .dropdown-content a:hover {
+            background: green;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <ul class="nav-links">
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">About</a></li>
+
+            <li class="dropdown">
+                <a href="#">Drop Down Menu</a>
+
+                <div class="dropdown-content">
+                    <a href="https://www.google.com" target="_blank">Google</a>
+                    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+</body>
+
+</html>

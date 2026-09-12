@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tapşırıqlar</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .task {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin: 3px;
+            cursor: pointer;
+        }
+
+        h1 {
+            padding: 10px;
+            border: 1px solid #aaa;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="task">
+        <h3>Tapşırıq 1</h3>
+        <input type="text" id="myInput" oninput="showText()" placeholder="Bir şey yazın...">
+        <p id="myText"></p>
+    </div>
+
+    <div class="task">
+        <h3>Tapşırıq 2</h3>
+        <button onclick="addHello()">Add</button>
+        <ul id="myList"></ul>
+    </div>
+
+    <div class="task">
+        <h3>Tapşırıq 3</h3>
+        <h1 id="title">Başlıq (h1)</h1>
+        <button onclick="changeBg('red')">Qırmızı</button>
+        <button onclick="changeBg('green')">Yaşıl</button>
+        <button onclick="changeBg('purple')">Bənövşəyi</button>
+        <button onclick="changeBg('orange')">Narıncı</button>
+    </div>
+
+    <script>
+        function showText() {
+            let inputVal = document.getElementById("myInput").value;
+            document.getElementById("myText").textContent = inputVal;
+        }
+
+        function addHello() {
+            let li = document.createElement("li");
+            li.textContent = "hello";
+            document.getElementById("myList").appendChild(li);
+        }
+
+        function changeBg(color) {
+            document.getElementById("title").style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+
+</html>

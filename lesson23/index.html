@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            height: 100vh;
+            display: flex;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255);
+            padding: 30px 35px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+            width: 380px;
+            text-align: center;
+            margin: auto;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 26px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #555;
+            font-size: 13.5px;
+            font-weight: 500;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            font-size: 15px;
+            box-sizing: border-box;    
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Giriş Yap</h2>
+        <p>Hesabınıza giriş yapın</p>
+
+        <form>
+            <div class="input-group">
+                <label for="ad">Ad</label>
+                <input type="text" id="ad" placeholder="Adınız" required>
+            </div>
+
+            <div class="input-group">
+                <label for="soyad">Soyad</label>
+                <input type="text" id="soyad" placeholder="Soyadınız" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Gmail / E-posta</label>
+                <input type="email" id="email" placeholder="ornek@gmail.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="sifre">Şifre</label>
+                <input type="password" id="sifre" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit">Giriş Yap</button>
+        </form>
+    </div>
+
+</body>
+</html>

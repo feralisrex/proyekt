@@ -1,0 +1,23 @@
+.class1 {
+    color: white;
+    font-size: 30px;
+    background-color: teal;
+    text-align: center;
+    border: 5px solid black;
+}
+
+#id1 {
+    color: white;
+    font-size: 26px;
+    background-color: brown;
+    text-align: start;
+    border: 3px dashed rebeccapurple;
+}
+
+#id2 {
+    color: white;
+    font-size: 26px;
+    background-color: brown;
+    text-align: start;
+    border: 3px dashed rebeccapurple;
+}

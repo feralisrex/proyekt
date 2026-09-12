@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tələbə qeydiyyatı</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f0f0f0;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 12px 0 4px;
+            font-weight: bold;
+        }
+ 
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background: #444;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h1>Tələbə qeydiyyatı</h1>
+
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" placeholder="Burada adınızı yazın">
+
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" placeholder="Burada soyadınızı yazın">
+
+        <label for="dogum">Doğum tarixi:</label>
+        <input type="date" id="dogum">
+
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" placeholder="Burada telefon nömrənizi yazın">
+
+        <label for="unvan">Ünvan:</label>
+        <textarea id="unvan" rows="3"></textarea>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+
+        <label for="dil">Dil:</label>
+        <select id="dil">
+            <option>Azərbaycanca</option>
+        </select>
+
+        <label for="sekil">Tələbənin şəkli:</label>
+        <input type="file" id="sekil"><br>
+
+        <button type="submit">Göndər</button>
+    </form>
+
+</body>
+
+</html>

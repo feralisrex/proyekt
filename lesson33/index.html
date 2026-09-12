@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Anderson</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .hero {
+            height: 100vh;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        nav {
+            width: 100%;
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            background: rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(8px);
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            position: relative;
+        }
+
+        .nav-menu a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16.5px;
+            padding: 8px 12px;
+            transition: 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 6px;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgba(255, 255, 255, 0.97);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            margin-top: 8px;
+            min-width: 190px;
+            overflow: hidden;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 14px 22px;
+            display: block;
+            white-space: nowrap;
+        }
+
+        .dropdown-content a:hover {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .center-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            z-index: 10;
+        }
+
+        .center-content h1 {
+            font-size: 4.2rem;
+            font-weight: 700;
+            line-height: 1.1;
+            text-shadow: 0 4px 25px rgba(0, 0, 0, 0.7);
+        }
+
+        .center-content p {
+            font-size: 1.65rem;
+            margin: 10px 0 20px;
+            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .tag {
+            color: #4CAF50;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="hero">
+            <nav>
+                <div class="logo">James Anderson</div>
+                <ul class="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Dropdown ▼</a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="center-content">
+                <div>
+                    <h1>I'm James Anderson</h1>
+                    <p>A Front-end Developer</p>
+                    <div class="tag">A new work from colorlib</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

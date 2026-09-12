@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapely</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #555;
+        }
+
+        nav {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: #222;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1140px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 55px;
+            color: white;
+        }
+
+        h3 {
+            font-size: 30px;
+            color: #222;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 5px;
+            border: 2px solid #745cf9;
+            text-decoration: none;
+        }
+
+        .btn-purple {
+            background: #745cf9;
+            color: white;
+        }
+
+        .btn-white {
+            background: white;
+            color: #745cf9;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url("https://colorlibhub.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg") center / cover;
+        }
+
+        .hero p {
+            color: white;
+        }
+
+        .gray {
+            background: #f7f7f7;
+        }
+
+        .parallax {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: url("https://colorlibhub.com/wp-content/uploads/sites/59/2016/12/photo-1452723312111-3a7d0db0e024.jpg") center / cover;
+        }
+
+        .parallax p {
+            color: white;
+        }
+
+        .clients {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .clients img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Shapely</div>
+
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="container text-center">
+
+            <h1>We Change Everything WordPress</h1>
+
+            <p>
+                This is the only WordPress theme you will ever want to use.
+            </p>
+
+            <a href="#" class="btn btn-purple">READ MORE</a>
+            <a href="#" class="btn btn-white">DOWNLOAD NOW</a>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col text-center">
+                    <img src="https://colorlibhub.com/wp-content/uploads/sites/59/2016/03/macbook-preview-flexible.png"
+                        alt="SEO Friendly">
+                </div>
+
+                <div class="col">
+                    <h3>SEO Friendly</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nam pulvinar luctus sem, eget porta orci.
+                    </p>
+
+                    <a href="#" class="btn btn-purple">
+                        READ MORE
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="gray">
+        <div class="container">
+            <div class="row">
+
+                <div class="col">
+                    <h3>Portfolio Section</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nam pulvinar luctus sem, eget porta orci.
+                    </p>
+
+                    <a href="#" class="btn btn-purple">
+                        SEE IT IN ACTION
+                    </a>
+                </div>
+
+                <div class="col text-center">
+                    <img src="https://colorlibhub.com/wp-content/uploads/sites/59/2016/03/flexible-portfolio.png"
+                        alt="Portfolio">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax">
+        <div class="container">
+
+            <h1>Small Parallax Section</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+            <a href="#" class="btn btn-purple">
+                MORE INFO
+            </a>
+
+        </div>
+    </section>
+
+    <section class="gray">
+        <div class="container text-center">
+
+            <h3>Limitless Options</h3>
+
+            <p>
+                Phasellus sed nisi ac dui interdum semper.
+                Etiam consequat fermentum sollicitudin.
+            </p>
+
+            <a href="#" class="btn btn-purple">
+                DOWNLOAD NOW
+            </a>
+
+            <br><br>
+
+            <img src="https://colorlibhub.com/wp-content/uploads/sites/59/2016/12/photo-1440557653082-e8e186733eeb-1.jpg"
+                alt="Limitless Options">
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center">
+
+            <h3>Our Main Clients</h3>
+
+            <div class="clients">
+                <img src="https://colorlibhub.com/wp-content/uploads/sites/59/2016/03/colorlib-logo.png">
+                <img src="https://colorlibhub.com/wp-content/uploads/sites/59/2016/03/js-logo.png">
+                <img src="https://colorlibhub.com/wp-content/uploads/sites/59/2016/03/html5-logo.png">
+                <img src="https://colorlibhub.com/wp-content/uploads/sites/59/2016/03/css-logo.png">
+                <img src="https://colorlibhub.com/wp-content/uploads/sites/59/2016/03/less-logo.png">
+                <img src="https://colorlibhub.com/wp-content/uploads/sites/59/2016/03/sass-logo.png">
+                <img src="https://colorlibhub.com/wp-content/uploads/sites/59/2016/03/bootstrap-logo.jpg">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gray">
+        <div class="container text-center">
+
+            <h3>
+                Do you like this awesome WordPress theme?
+            </h3>
+
+            <a href="#" class="btn btn-purple">
+                DOWNLOAD NOW
+            </a>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

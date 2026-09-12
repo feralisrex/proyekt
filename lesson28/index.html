@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laptop Card</title>
+
+    <style>
+        .body {
+            background: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial;
+        }
+
+        .card {
+            width: 300px;
+            border: 2px solid #ccc;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .image {
+            width: 100%;
+        }
+
+        .image img {
+            width: 100%;
+            display: block;
+        }
+
+        .title {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .title h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .title span {
+            color: gray;
+            font-size: 13px;
+        }
+
+        .price {
+            width: 100%;
+            margin-top: 5px;
+            color: #d9534f;
+            font-weight: bold;
+        }
+
+        .specs {
+            width: 90%;
+            background: #ddd;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        .actions {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .actions a {
+            color: purple;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .back {
+            width: 100%;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="body">
+        <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg" alt="laptop">
+            </div>
+
+            <div class="title">
+                <h3>2018 Lenovo Ideapad 330 15.6"</h3>
+                <span>by Lenovo</span>
+            </div>
+
+            <div class="price">
+                Price: $750.00
+            </div>
+
+            <div class="specs">
+                Intel Quad Core i5 processor <br>
+                15.6 inch Full HD Display <br>
+                8GB DDR4 RAM <br>
+                256GB SSD <br>
+                Windows 10
+            </div>
+
+            <div class="actions">
+                <a href="#">Buy</a>
+                <a href="#">Add to cart</a>
+            </div>
+
+            <div class="back">
+                <a href="#">Back</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background: black;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            background: green;
+            color: white;
+            padding: 15px 25px;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .nav-links a:hover {
+            color: green;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">Elcan</div>
+        <ul class="nav-links">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

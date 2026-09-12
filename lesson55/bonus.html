@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        p {
+            padding: 20px;
+            background-color: lightgray;
+            width: 200px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        p:hover {
+            background-color: transparent;
+        }
+
+        .colors {
+            margin-top: 10px;
+        }
+
+        .colors button {
+            display: none;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="text">Yeni</p>
+
+    <button id="changeName">change name</button>
+    <button id="changeColor">change color</button>
+
+    <div class="colors">
+        <button id="red">red</button>
+        <button id="green">green</button>
+        <button id="blue">blue</button>
+    </div>
+
+    <script>
+        const text = document.getElementById("text");
+        const changeName = document.getElementById("changeName");
+        const changeColor = document.getElementById("changeColor");
+
+        const red = document.getElementById("red");
+        const green = document.getElementById("green");
+        const blue = document.getElementById("blue");
+
+        changeName.onclick = function () {
+            let ad = prompt("Yeni ad daxil et:");
+            if (ad !== null) {
+                text.innerHTML = ad;
+            }
+        }
+
+        changeColor.onclick = function () {
+            red.style.display = "inline-block";
+            green.style.display = "inline-block";
+            blue.style.display = "inline-block";
+        }
+
+        red.onclick = function () {
+            text.style.backgroundColor = "red";
+        }
+
+        green.onclick = function () {
+            text.style.backgroundColor = "green";
+        }
+
+        blue.onclick = function () {
+            text.style.backgroundColor = "blue";
+        }
+    </script>
+
+</body>
+
+</html>

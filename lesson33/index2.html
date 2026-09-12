@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dropdown with Hamburger Icon</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .body {
+            font-family: 'Poppins', Arial, sans-serif;
+            padding: 50px;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hamburger-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hamburger {
+            width: 55px;
+            height: 55px;
+            background-color: #222;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger:hover {
+            background-color: #4CAF50;
+            transform: scale(1.08);
+        }
+
+        .hamburger i {
+            color: white;
+            font-size: 28px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            background-color: white;
+            min-width: 220px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .hamburger-dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 15px 20px;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            transition: 0.2s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-content a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .dropdown-content a.active:hover {
+            background-color: #45a049;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 60px;
+            color: #666;
+            text-align: center;
+            max-width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <h1>Hover üzərində Hamburger Icon → Dropdown</h1>
+
+        <div class="hamburger-dropdown">
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="dropdown-content">
+                <a href="#" class="active">Home</a>
+                <a href="#">News</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">News</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">News</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <p>
+            Siçanı hamburger ikonuna (üç xətt) gətirin → Menyu açılacaq.<br>
+            İkon hover zamanı yaşıl rəngə keçir.
+        </p>
+    </div>
+</body>
+
+</html>

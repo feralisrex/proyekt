@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p id="p1">Men P elementiyem ve alttaki buton menim text hissemi deyisecek</p>
+    <button id="btn1">Salam</button>
+
+    <br><br>
+
+    <p id="p2">(getElementById ile secilmelidir) Men P elementiyem ve alttaki buton menim text hissemi deyisecek</p>
+    <button id="btn2">Sagol</button>
+
+    <script>
+        const p1 = document.getElementById("p1");
+        const btn1 = document.getElementById("btn1");
+
+        const p2 = document.getElementById("p2");
+        const btn2 = document.getElementById("btn2");
+
+        btn1.addEventListener("click", () => {
+            p1.innerHTML = "Salam";
+        });
+
+        btn2.addEventListener("click", () => {
+            p2.innerHTML = "Sagol";
+        });
+    </script>
+
+</body>
+
+</html>

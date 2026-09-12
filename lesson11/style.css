@@ -1,0 +1,20 @@
+a{
+    text-decoration: overline;
+}
+.text1{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-indent: 20px;
+}
+.text2{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+    text-indent: 20px;
+    text-decoration: underline 1.5px wavy green;
+}
+div{
+    text-shadow: 2px 2px 4px red;
+    letter-spacing: 3px;
+}

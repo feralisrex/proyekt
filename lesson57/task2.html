@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Göster/Gizlet</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+            font-family: sans-serif;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #333;
+            display: none;
+        }
+
+        p.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="toggleText()">Göster/Gizlet</button>
+    <p id="text">Bu paragrafı göster/gizlet butonu ile kontrol ede bilirsiz.</p>
+
+    <script>
+        function toggleText() {
+            let p = document.getElementById("text");
+
+            if (p.style.display === "none" || p.style.display === "") {
+                p.style.display = "block";
+            } else {
+                p.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

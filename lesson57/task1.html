@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #17d7a0, #4f9da6);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrapper {
+            background: #fff;
+            width: 350px;
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        .inputField {
+            display: flex;
+            margin: 15px 0;
+        }
+
+        .inputField input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .inputField button,
+        .footer button {
+            background: #8e49e8;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        ul {
+            list-style: none;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        li {
+            background: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 3px;
+        }
+
+
+        li span {
+            background: #e74c3c;
+            color: #fff;
+            padding: 10px 12px;
+            margin: -10px -10px -10px 0;
+            cursor: pointer;
+            border-radius: 0 3px 3px 0;
+            display: none;
+        }
+
+        li:hover span {
+            display: block;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h2>Todo App</h2>
+        <div class="inputField">
+            <input type="text" placeholder="Add your new todo">
+            <button onclick="addTodo()"><i class="fas fa-plus"></i></button>
+        </div>
+        <ul id="list"></ul>
+        <div class="footer">
+            <span>You have <span id="count">0</span> pending tasks</span>
+            <button onclick="clearAll()">Clear All</button>
+        </div>
+    </div>
+
+    <script>
+        let input = document.querySelector(".inputField input");
+        let list = document.getElementById("list");
+        let count = document.getElementById("count");
+
+        function updateCount() {
+            count.textContent = list.children.length;
+        }
+
+        function addTodo() {
+            if (input.value === "") return alert("İnput boş qala bilməz!!!");
+
+            let li = document.createElement("li");
+            li.innerHTML = input.value + ' <span onclick="this.parentElement.remove(); updateCount();"><i class="fas fa-trash"></i></span>';
+
+            list.prepend(li);
+            input.value = "";
+            updateCount();
+        }
+
+
+
+
+        function clearAll() {
+            list.innerHTML = "";
+            updateCount();
+            alert("Bütün elementlər silindi");
+        }
+    </script>
+
+</body>
+
+</html>

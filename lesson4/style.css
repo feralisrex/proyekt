@@ -1,0 +1,21 @@
+h1{
+    color: white;
+    background-color: blue; 
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    background-color: aqua;
+}
+
+u{
+    color: white;
+    background-color: crimson;
+}
+
+ins{
+    color: white;
+    background-color:darkblue;
+}
+

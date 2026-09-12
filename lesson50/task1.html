@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Navbar</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: #f2f2f2;
+        }
+
+        .btn {
+            background-color: #5c7ea3;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="btn" onclick="showText(this)">Home</div>
+        <div class="btn" onclick="showText(this)">About Us</div>
+        <div class="btn" onclick="showText(this)">Our Products</div>
+        <div class="btn" onclick="showText(this)">Contact Us</div>
+    </div>
+
+    <script>
+        function showText(element) {
+            console.log(element.textContent);
+        }
+    </script>
+
+</body>
+
+</html>
